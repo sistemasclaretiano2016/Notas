@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/disciplina"
+                android:textColor="@color/dados_lista"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/semestre"
+                android:textColor="@color/dados_lista"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtDisciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="2"
+                android:gravity="center"
+                android:textColor="@color/dados_lista_resultado"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtSemestre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center"
+                android:textColor="@color/dados_lista_resultado"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="1"
+                android:gravity="center"
+                android:text="@string/semestral"
+                android:textColor="@color/dados_lista"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="1"
+                android:gravity="center"
+                android:text="@string/av_final"
+                android:textColor="@color/dados_lista"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="1"
+                android:gravity="center"
+                android:text="@string/nota_final"
+                android:textColor="@color/dados_lista"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtNota1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:textColor="@color/dados_lista_resultado"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtNota2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:gravity="center"
+                android:textColor="@color/dados_lista_resultado"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:textColor="@color/dados_lista_resultado"
+                android:gravity="center"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="@string/situacao"
+                android:textColor="@color/dados_lista"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtSituacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:textColor="@color/dados_lista_resultado"
+                android:gravity="center"
+                android:textSize="16sp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""/>
+
+</LinearLayout>

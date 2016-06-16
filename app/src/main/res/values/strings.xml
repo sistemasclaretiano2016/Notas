@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Notas</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="semestre">Semestre</string>
+    <string name="semestral">Nota Semestral</string>
+    <string name="av_final">Avaliação Final</string>
+    <string name="nota_final">Nota Final</string>
+    <string name="situacao">Situação</string>
+</resources>

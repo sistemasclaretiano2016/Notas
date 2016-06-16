@@ -1,0 +1,75 @@
+DROP TABLE IF EXISTS nota;
+DROP TABLE IF EXISTS semestre;
+DROP TABLE IF EXISTS disciplina;
+
+CREATE TABLE IF NOT EXISTS disciplina (
+	_id				    INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+	descricao           VARCHAR(100) NOT NULL,
+	nota_minima         DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS semestre (
+	_id				    INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+	disciplina_id       INTEGER NOT NULL,
+	descricao           DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS nota (
+	_id				    INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+	disciplina_id       INTEGER NOT NULL,
+	semestre_id         INTEGER NOT NULL,
+	nota_parcial        DECIMAL(10,2) NOT NULL,
+    nota_final          DECIMAL(10,2) NOT NULL
+);
+
+INSERT INTO disciplina (_id, descricao, nota_minima) VALUES (1, 'Linguagem de Programação', 6);
+INSERT INTO disciplina (_id, descricao, nota_minima) VALUES (2, 'Redes de Computadores', 6);
+INSERT INTO disciplina (_id, descricao, nota_minima) VALUES (3, 'Sistemas Distribuidos', 6);
+INSERT INTO disciplina (_id, descricao, nota_minima) VALUES (4, 'Pesquisa Operacional', 6);
+INSERT INTO disciplina (_id, descricao, nota_minima) VALUES (5, 'Gerencia de Projetos', 6);
+
+
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '1º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '2º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '3º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '4º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '5º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '6º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '7º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (1, '8º Semestre');
+
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '1º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '2º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '3º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '4º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '5º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '6º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '7º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (2, '8º Semestre');
+
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '1º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '2º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '3º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '4º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '5º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '6º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '7º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (3, '8º Semestre');
+
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '1º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '2º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '3º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '4º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '5º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '6º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '7º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (4, '8º Semestre');
+
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '1º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '2º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '3º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '4º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '5º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '6º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '7º Semestre');
+INSERT INTO semestre (disciplina_id, descricao) VALUES (5, '8º Semestre');
